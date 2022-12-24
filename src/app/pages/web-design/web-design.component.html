@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Background image -->
+  <div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('/assets/images/web\ design\ new.jpg');
+    height: 400px;
+  "
+>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mt-5 mb-3 text-light "style="font-weight:600;font-size:4vw;font-family:'Times New Roman', Times, serif;text-shadow:2px 2px 2px black;">Are you in search of the best Web Design Company?.</h1>
+        <a class="btn btn-outline-light btn-lg" href="/contact" role="button"
+        ><h6>GET
+          A PROPOSAL</h6> </a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md">
+            <h1 class="text-center note note-warning">Looking for a responsive web design for your business or brand</h1>
+            <p lass="text-center">we understand the need of having a responsive website for your business. Keeping your business needs, goals and aspirations in mind, we design and develop the best website for you. To cut a long story short, it is our job to make sure that your website reaches your targeted audience and sells your products and services in the right way.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row mt-5 mb-5">
+          <div class="col-md">
+            <img src="/assets/images/web d.jpg" alt="" height="100%" width="100%" class="img">
+          </div>
+          <div class="col-md mt-5">
+            <div class="row">
+              <div class="col-md">
+                <h1  class="note note-success">Responsive Wesite Design</h1>
+                <p>Our experts will create exceptional mobile friendly websites that will not only keep your customers engaged but also retain them. Websites designed and developed by us will seamlessly scale across most mobile devices</p>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <h1  class="note note-success">Ecommerce Website Design</h1>
+                  <p>Through our creative eCommerce designs, we ensure that a user is able to easily locate a product, add it to the cart and complete the transaction like a breeze.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+
+           <div class="row">
+            <div class="col">
+              <h3  class="note note-success">Custom Website Design</h3>
+              <p>
+                We custom design banners and layouts for your website that catches eyes
+              </p>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col">
+              <h3  class="note note-success">Search Engine Friendly</h3>
+              <p>
+                Get your website search engine optimized
+              </p>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col">
+              <h3  class="note note-success">Mobile Responsive Design</h3>
+              <p>
+                Get your website rendering on variety of devices and windows that adapts to users devices
+              </p>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col">
+              <h3 class="note note-success">Custom Website Design</h3>
+              <p>
+                We custom design banners and layouts for your website that catches eyes
+              </p>
+            </div>
+           </div>
+
+           <div class="row">
+            <div class="col">
+              <h3 class="note note-success">Enquiry forms</h3>
+              <p>
+                Integrate enquiry forms for your potential customers to reach up to you.
+              </p>
+            </div>
+           </div>
+
+          </div>
+          <div class="col-md">
+            <img src="/assets/images/web d2.jpg" alt="" height="100%" width="100%" class="img">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p class="display-6 text-cente note note-warning" ><span >Let's start discussing your new project!</span></p>
+            </blockquote>
+          </div>
+        </div>
+
+
+
+
+      <div class="container mb-5">
+        <div class="row mt-5">
+          <div class="col-md mt-5">
+            <h1 class="display-1 text-center txt">Just Say Hello !</h1>
+            <!-- <h1 >Just Say Hello !</h1> -->
+            <h3 class="text-center">Let Us Know More About You !</h3>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-left">Stay Updated !</h2>
+                <h5 class="card-text text-left mb-4">Enquire For Any Services, Our Team Will Help Out.</h5>
+                <form [formGroup]="registerform" >
+                  <div class="row">
+                    <div class="col-md">
+                      <h5 style="font-family: 'Times New Roman', Times, serif;"> Your Name</h5>
+                      <input type="text" name="uname" formControlName="uname" class="form-control" placeholder="Name" style="border: 0.2px solid black;">
+                      <p  class="text-danger" *ngIf="registerform.controls.uname.invalid && registerform.controls.uname.touched">Please Enter Your Name</p>
+
+                    </div>
+                    <div class="col-md">
+                      <h5 style="font-family: 'Times New Roman', Times, serif;">Email</h5>
+                      <input type="text" name="email" formControlName="email" class="form-control"  placeholder="Email"  style="border: 0.2px solid black;" >
+                      <p  class="text-danger" *ngIf="registerform.controls.email.invalid && registerform.controls.email.touched" >Please Enter Your Email</p>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col mt-3">
+                      <h5 style="font-family: 'Times New Roman', Times, serif;" >Phone Number</h5>
+                    <input type="text" name="phone" formControlName="phone" class="form-control"  placeholder="Number" style="border: 0.2px solid black;">
+                    <p class="text-danger" *ngIf="registerform.controls['phone'].invalid && registerform.controls['phone'].touched"> please enter Your contact number</p>
+                    <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['minlength']">please enter 10 digit Number</p>
+                    <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['maxlength']"> please enter number below 10 digits.</p>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col">
+                      <h5 style="font-family: 'Times New Roman', Times, serif;" >Service</h5>
+                    <input type="text" name="service" formControlName="service" class="form-control"  placeholder="Service" style="border: 0.2px solid black;">
+                    <p  class="text-danger" *ngIf="registerform.controls.service.invalid && registerform.controls.service.touched" >Please Enter Service.</p>
+                    </div>
+                  </div>
+
+                  <div class="row mb-5">
+                    <div class="col">
+                      <h5 style="font-family: 'Times New Roman', Times, serif;">Message</h5>
+                      <textarea name="" id="" cols="30" rows="10" name="message" formControlName="message" class="form-control"  placeholder="Message"  style="border: 0.2px solid black;"></textarea>
+                      <!-- <input type="textarea"  > -->
+                      <p  class="text-danger" *ngIf="registerform.controls.message.invalid && registerform.controls.message.touched" >Please Enter Message</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="btn btn-dark center">Submit</div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+
+
+
+</body>
+</html>

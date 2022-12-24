@@ -1,0 +1,28 @@
+.text{
+    height: 130px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+.card-header{
+    font-family:'Times New Roman', Times, serif;
+}
+.images{
+    height: 450px;
+}
+.card-text{
+    text-align: center;
+    font-size: 14.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+.card-title{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+
+    color: black;
+  }
+.txt{
+    text-align: center;
+    font-size: 20.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

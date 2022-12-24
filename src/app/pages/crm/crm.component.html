@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+   <!-- Background image -->
+   <div
+   class="p-5 text-center bg-image"
+   style="
+     background-image: url('/assets/images/crm\ bg.jpg');
+     height: 400px;
+   "
+ >
+   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+     <div class="d-flex justify-content-center align-items-center h-100">
+       <div class="text-white">
+         <h1 class="mb-3" style="text-shadow: 2px 2px 2px black;">Customer Relationship Management</h1>
+         <a class="btn btn-outline-light btn-lg" href="/crm" role="button"
+         ><h6>GET
+          A PROPOSAL</h6></a
+         >
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Background image -->
+
+
+<div class="container mt-5">
+  <h1 class="text-center display-6 note note-warning " style="font-weight: 800;">CRM Software in Pune</h1>
+  <p class="text-center h6">Customized CRM Software can extend itself to manage every aspect of your business and can cover your complete business management process. Such CRM Software can provide smooth functioning of your business and can eliminate wastages of man hours, money and can bring automation and overall simplicity and improvements in the busines processes</p>
+  <p  class="text-center h6">CRM Software Systems are very essential for success as well as general day to day management of any company. Keeping proper records required and having a system in place for Customer Relationship Management increases not only sales, performance and profits of a company but also image and goodwill of a company in the eyes of customers as well as general public</p>
+    <ul class="text-left h6 mt-5">
+      <li>
+        Improsys CRM Software Manage your leads / business opportunities received from various sources.
+      </li>
+      <li>
+        Convert a verified lead with full information to valid enquiries.
+      </li>
+      <li>
+        Keep a track of of all leads from a holistic lead dashboard.
+      </li>
+    </ul>
+</div>
+
+<div class="container mt-5">
+  <h1 class="text-center display-6 note note-warning" style="font-weight: 800;">Business Objective of  CRM Software</h1>
+</div>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md">
+      <ul class="h4">
+        <li>On-Time Followup</li>
+        <li>Increased Sales</li>
+        <li>Improved Cashflow</li>
+        <li>Ease in Operations</li>
+      </ul>
+    </div>
+    <div class="col-md">
+      <ul  class="h4">
+        <li>Information Security</li>
+        <li>Customer satisfaction</li>
+        <li>Customer Loyality</li>
+        <li>Increased Sales and Revenue</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5 mb-4">
+  <h1 class="text-center display-6 note note-warning" style="font-weight: 800;">Business Impact of  CRM Software</h1>
+</div>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md">
+      <ul class="h5">
+        <li>No more errors on Quotes,PO,Invoices,Vouchers</li>
+        <li>On time followup with customers on due dates</li>
+        <li>Instant Availibility of Past Customer communications</li>
+        <li>Increase in Customers, Sales,Revenue</li>
+      </ul>
+    </div>
+    <div class="col-md">
+      <ul  class="h5">
+        <li>No more cases of lack or incomplete communication</li>
+        <li>Automation of repetitive tasks</li>
+        <li>Ability to manage performance of Sales Force</li>
+        <li>Improved Employee Morale</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h1  class="text-center display-6 note note-warning" style="font-weight: 800;">Features of CRM Software</h1>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-4">
+  <div class="col" *ngFor="let data of data">
+    <div class="card cards">
+      <div class="bg-image hover-zoom">
+        <div class="container">
+          <img src="{{data.img}}" class="card-img-top " alt="Hollywood Sign on The Hill" />
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text text-dark h5 text-center">
+         {{data.text}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="container mb-5">
+  <div class="row mt-5">
+    <div class="col-md">
+      <h1 class="display-1 text-center mt-5">Just Say Hello !</h1>
+      <!-- <h1 >Just Say Hello !</h1> -->
+      <h3 class="text-center">Let Us Know More About You !</h3>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-left text-center">Stay Updated !</h2>
+          <h5 class="card-text text-left mb-3 text-center">Enquire For Any Services, Our Team Will Help Out.</h5>
+          <form [formGroup]="registerform" >
+            <div class="row">
+              <div class="col-md">
+                <h5 style="font-family: 'Times New Roman', Times, serif;"> Your Name</h5>
+                <input type="text" name="uname" formControlName="uname" class="form-control" placeholder="Name" style="border: 0.2px solid black;">
+                <p  class="text-danger" *ngIf="registerform.controls.uname.invalid && registerform.controls.uname.touched">Please Enter Your Name</p>
+
+              </div>
+              <div class="col-md">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">Email</h5>
+                <input type="text" name="email" formControlName="email" class="form-control"  placeholder="Email"  style="border: 0.2px solid black;" >
+                <p  class="text-danger" *ngIf="registerform.controls.email.invalid && registerform.controls.email.touched" >Please Enter Your Email</p>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col mt-3">
+                <h5 style="font-family: 'Times New Roman', Times, serif;" >Phone Number</h5>
+              <input type="text" name="phone" formControlName="phone" class="form-control"  placeholder="Number" style="border: 0.2px solid black;">
+              <p class="text-danger" *ngIf="registerform.controls['phone'].invalid && registerform.controls['phone'].touched"> please enter Your contact number</p>
+              <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['minlength']">please enter 10 digit Number</p>
+              <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['maxlength']"> please enter number below 10 digits.</p>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <h5 style="font-family: 'Times New Roman', Times, serif;" >Service</h5>
+              <input type="text" name="service" formControlName="service" class="form-control"  placeholder="Service" style="border: 0.2px solid black;">
+              <p  class="text-danger" *ngIf="registerform.controls.service.invalid && registerform.controls.service.touched" >Please Enter Service.</p>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">Message</h5>
+                <textarea name="" id="" cols="30" rows="10" name="message" formControlName="message" class="form-control"  placeholder="Message"  style="border: 0.2px solid black;"></textarea>
+                <!-- <input type="textarea"  > -->
+                <p  class="text-danger" *ngIf="registerform.controls.message.invalid && registerform.controls.message.touched" >Please Enter Message</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn btn-dark center">Submit</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
