@@ -1,0 +1,159 @@
+.body{
+  scroll-behavior: smooth;
+}
+.card-img-top{
+  height: 400px;
+  /* width: 100%; */
+}
+.card-title{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:rgb(0, 0, 0);
+}
+.card:hover .overlay {
+  opacity: 1;
+  box-shadow: 6px 6px 6px grey;
+}
+.xbootstrap {
+  color: #070707;
+  /* background-color: #2d2d2d; */
+  letter-spacing: .1em;
+  text-shadow: -1px -1px 1px rgb(155, 155, 155), 1px 1px 1px #ffffff;
+}
+.box{
+  margin-top: 40px;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.para{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-weight: 900; */
+}
+.txt{
+  text-shadow: 2px 2px 2px black;
+}
+
+.logo{
+
+  display: inline-block;
+}
+
+.card-img-overlay{
+  margin-right: 80px;
+}
+.card-header{
+  height: 85px;
+}
+.btn{
+  width: 100%;
+}
+
+
+
+/* pop up start */
+
+
+.pop_up_container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.926);
+  inset: 0;
+  display: grid;
+  place-items: center;
+  animation: show_popup 500ms ease-in-out forwards;
+  margin-top: 48px;
+
+
+}
+
+.pop_up {
+  width: clamp(300px, 90vw, 500px);
+  background-color: #eeeded;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  color: #fff;
+}
+
+/* this is the X */
+.pop_up h1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+  user-select: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form * {
+  margin: .5rem 0;
+}
+
+input, button {
+  border: none;
+  border-bottom: .15rem solid #ff0000;
+  font-size: 1rem;
+  padding: .3rem;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+legend {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+button {
+  border: none;
+  background-color: #ff0000;
+  border-radius: .5rem;
+  padding: .5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pop_up h1:active,
+button:active {
+  transform: scale(.9);
+}
+
+
+#popup:checked ~ .pop_up_container {
+  transform: scale(0);
+  pointer-events: none;
+  animation: none;
+}
+
+
+@keyframes show_popup {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+#popup {
+  display: none;
+}
+/* pop up ends */

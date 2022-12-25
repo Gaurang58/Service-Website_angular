@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="display-3 text-center">CONTACT US</h1>
+  </div>
+
+  <div class="container-fluid mb-5" style="background-color:rgb(182, 182, 182);">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4 mt-5">
+          <div class="row mb-4">
+            <div class="card text-center">
+              <!-- <div class="card-header">Featured</div> -->
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mt-5">
+                      <img src="/assets/images/call.png" alt="" height="50px" width="50px">
+                    </div>
+                    <div class="col-md">
+                      <h5 class="card-title">MOBILE NUMBER</h5>
+                      <p class="card-text">
+                        <a href="tel:+91 7378494787" class="text-dark">+91 7378494787</a><br>
+                        <a href="tel:+91 7559436583 " class="text-dark">+91 7559436583 </a><br>
+                        <a href="tel:+91 8983222314" class="text-dark">+91 8983222314</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card-footer text-muted">2 days ago</div> -->
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="card text-center">
+              <!-- <div class="card-header">Featured</div> -->
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mt-3">
+                      <img src="/assets/images/mail.png" alt="" height="50px" width="50px">
+                    </div>
+                    <div class="col-md">
+                      <h5 class="card-title">EMAIL ADDRESS</h5>
+                      <p class="card-text">
+                        <a href="mailto:anikay.com" class="text-dark">anikay.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card-footer text-muted">2 days ago</div> -->
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mt-4">
+                      <img src="/assets/images/navigation.png" alt="" height="50px" width="50px" class="mt-3">
+                    </div>
+                    <div class="col-md">
+                      <h5 class="card-title">LOCATION</h5>
+                      <p class="card-text">
+                        <a href="https://goo.gl/maps/PJ9DQF1VzR7Vn77R7" class="text-dark">306, 3rd Floor, Kumar Primus, Hadapsar, Pune 411013</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md mb-5">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-md">
+                <div class="card">
+                  <div class="card-body">
+                    <h2 class="card-title text-left">SEND MESSAGE</h2>
+                    <form [formGroup]="registerform">
+                      <div class="row mb-3">
+                        <div class="col-md">
+                          <h5
+                            style="font-family: 'Times New Roman', Times, serif"
+                          >
+                            Your Name
+                          </h5>
+                          <input
+                            type="text"
+                            name="uname"
+                            formControlName="uname"
+                            class="form-control"
+                            placeholder="Name"
+                            style="border: 0.2px solid black"
+                          />
+                          <p
+                            class="text-danger"
+                            *ngIf="
+                              registerform.controls.uname.invalid &&
+                              registerform.controls.uname.touched
+                            "
+                          >
+                            Please Enter Your Name
+                          </p>
+                        </div>
+                        <div class="col-md">
+                          <h5
+                            style="font-family: 'Times New Roman', Times, serif"
+                          >
+                            Email
+                          </h5>
+                          <input
+                            type="text"
+                            name="email"
+                            formControlName="email"
+                            class="form-control"
+                            placeholder="Email"
+                            style="border: 0.2px solid black"
+                          />
+                          <p
+                            class="text-danger"
+                            *ngIf="
+                              registerform.controls.email.invalid &&
+                              registerform.controls.email.touched
+                            "
+                          >
+                            Please Enter Your Email
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <div class="col">
+                          <h5
+                            style="font-family: 'Times New Roman', Times, serif"
+                          >
+                            Phone Number
+                          </h5>
+                          <input
+                            type="text"
+                            name="phone"
+                            formControlName="phone"
+                            class="form-control"
+                            placeholder="Number"
+                            style="border: 0.2px solid black"
+                          />
+                          <p
+                            class="text-danger"
+                            *ngIf="
+                              registerform.controls['phone'].invalid &&
+                              registerform.controls['phone'].touched
+                            "
+                          >
+                            please enter Your contact number
+                          </p>
+                          <p
+                            class="text-danger"
+                            *ngIf="registerform.controls['phone'].errors?.['minlength']"
+                          >
+                            please enter 10 digit Number
+                          </p>
+                          <p
+                            class="text-danger"
+                            *ngIf="registerform.controls['phone'].errors?.['maxlength']"
+                          >
+                            please enter number below 10 digits.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <div class="col">
+                          <h5
+                            style="font-family: 'Times New Roman', Times, serif"
+                          >
+                            Service
+                          </h5>
+                          <input
+                            type="text"
+                            name="service"
+                            formControlName="service"
+                            class="form-control"
+                            placeholder="Service"
+                            style="border: 0.2px solid black"
+                          />
+                          <p
+                            class="text-danger"
+                            *ngIf="
+                              registerform.controls.service.invalid &&
+                              registerform.controls.service.touched
+                            "
+                          >
+                            Please Enter Service.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row mb-5">
+                        <div class="col">
+                          <h5
+                            style="font-family: 'Times New Roman', Times, serif"
+                          >
+                            Message
+                          </h5>
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            name="message"
+                            formControlName="message"
+                            class="form-control"
+                            placeholder="Message"
+                            style="border: 0.2px solid black"
+                          ></textarea>
+                          <!-- <input type="textarea"  > -->
+                          <p
+                            class="text-danger"
+                            *ngIf="
+                              registerform.controls.message.invalid &&
+                              registerform.controls.message.touched
+                            "
+                          >
+                            Please Enter Message
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col">
+                          <div class="btn btn-dark center">Submit</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="container-fluid">
+  <div class="container mt-5">
+    <div class="row">
+      <h1 class="display-3 text-center">FIND US ON GOOGLE MAP</h1>
+      <div class="container ms-1">
+        <div class="row">
+          <div class="col-md">
+            <h3 class="mt-5"><b>Hello!</b></h3>
+          <p class="text-dark mt-1" style="font-family: Verdana, Geneva, Tahoma,
+            sans-serif;font-weight: 600;">Got a question, project, or crazy idea?<br>
+            Lets talk about it over a cup of coffee
+          </p>
+
+          <img src="/assets/images/flag.webp" height="80px" width="90px">
+          <h3><b>India</b></h3>
+          <p><a href="https://goo.gl/maps/HpccBeNCfBBkz3ZM8" class="text-dark"><b>Address: 306, 3rd Floor, Kumar Primus, Pune, Maharashtra
+            411001</b></a></p>
+          </div>
+          <div class="col-md ms-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121071.88279917471!2d73.84363123368512!3d18.506459714282073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2c1c7bc848cc5%3A0xc6c51f3b562d30bd!2s306%2C%203rd%20Floor%2C%20Kumar%20Primus%2C%20Pune%2C%20Maharashtra%20411001!3m2!1d18.5064726!2d73.9136717!5e0!3m2!1sen!2sin!4v1670582383137!5m2!1sen!2sin" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-4"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+</body>
+</html>

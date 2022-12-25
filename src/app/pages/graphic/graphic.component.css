@@ -1,0 +1,8 @@
+.images{
+    height: 450px;
+}
+.card-text{
+    height: 140px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}

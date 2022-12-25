@@ -1,0 +1,8 @@
+.card-img-top{
+  height:50%;
+  width: 100%;
+}
+.cards{
+  box-shadow: 4px 4px 4px black;
+  border: 0.5px solid  black;
+}

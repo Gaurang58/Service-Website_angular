@@ -1,0 +1,14 @@
+.card-img{
+    height: 550px;
+    /* width: 100%; */
+  }
+.txt{
+    margin-top: 80px;
+}
+.img{
+    box-shadow: 3px 3px 3px 3px rgb(85, 85, 85);
+    /* border: 4px solid black; */
+}
+.images{
+    height: 550px;
+}

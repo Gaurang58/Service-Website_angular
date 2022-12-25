@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- Background image -->
+ <div
+ class="p-5 text-center bg-image"
+ style="
+   background-image: url('/assets/images/cms\ bg3.webp');
+   height: 400px;
+ "
+>
+ <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+   <div class="d-flex justify-content-center align-items-center h-100">
+     <div class="text-white"><br><br><br>
+       <div class="mt-5">
+        <a class="btn btn-outline-light btn-lg" href="/contact" role="button"
+       >  <h4>GET
+        A PROPOSAL</h4>  </a
+       >
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- Background image -->
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md">
+      <h1 class="display-6 text-center text-dark">Content Management System</h1>
+      <h3 class="text-dark text-center">Content Management System is a software application used to create and manage digital content.</h3>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md">
+        <h5 class="text-dark text-center">We help you to add or edit any text, images, links or even plug-ins into your website without the burden of paying a third party or installation of any software. Here you will find an easy and convenient procedure to run and you can apply it to both personal and business sites.</h5>
+        <h5 class="text-dark text-center">There is an infinite range of companies all over the world where you will adopt this facility of content management only after gaining a basic knowledge regarding HTML and web design programming.</h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md">
+      <img src="/assets/images/cms 4.jpg" alt="" width="100%">
+    </div>
+    <div class="col-md">
+      <ul>
+        <li>
+          Open Source – We enhance our clients to get the facility of open source for investing budgets and resources for their business at a very reasonable rate along with no license cost.
+        </li>
+        <li>
+          High Scalability – Whatever may be your need for Content Management, we provide the benefit of flexibility and expandability.
+        </li>
+        <li>
+          Individual Access Right – We allows our clients to access their own individual right in case of entire websites, sub-domains, individual pages.
+Specialized Workflows – We provide our client a strong integrated development along with the advantage of editing workflows.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-md">
+      <h4 class="text-center text-dark">Some other necessary benefits which we provide are –</h4>
+      <ul>
+        <li>
+          Professional Support
+        </li>
+        <li>
+          Flexible style and designs
+        </li>
+        <li>
+          Intuitive drag and drop method
+        </li>
+        <li>
+          Automatic caching
+        </li>
+        <li>
+          Integrated search tools
+        </li>
+        <li>
+          Easy templates
+        </li>
+        <li>
+          Extensive documentation
+        </li>
+        Unlimited expandability
+      </ul>
+    </div>
+    <div class="col-md">
+      <img src="/assets/images/cms 6.jpg" alt="" width="100%">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container mb-5">
+  <div class="row mt-5">
+    <div class="col-md">
+      <h1 class="display-1 text-center mt-5">Just Say Hello !</h1>
+      <!-- <h1 >Just Say Hello !</h1> -->
+      <h3 class="text-center">Let Us Know More About You !</h3>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-left text-center">Stay Updated !</h2>
+          <h5 class="card-text text-left mb-3 text-center">Enquire For Any Services, Our Team Will Help Out.</h5>
+          <form [formGroup]="registerform" >
+            <div class="row">
+              <div class="col-md">
+                <h5 style="font-family: 'Times New Roman', Times, serif;"> Your Name</h5>
+                <input type="text" name="uname" formControlName="uname" class="form-control" placeholder="Name" style="border: 0.2px solid black;">
+                <p  class="text-danger" *ngIf="registerform.controls.uname.invalid && registerform.controls.uname.touched">Please Enter Your Name</p>
+
+              </div>
+              <div class="col-md">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">Email</h5>
+                <input type="text" name="email" formControlName="email" class="form-control"  placeholder="Email"  style="border: 0.2px solid black;" >
+                <p  class="text-danger" *ngIf="registerform.controls.email.invalid && registerform.controls.email.touched" >Please Enter Your Email</p>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col mt-3">
+                <h5 style="font-family: 'Times New Roman', Times, serif;" >Phone Number</h5>
+              <input type="text" name="phone" formControlName="phone" class="form-control"  placeholder="Number" style="border: 0.2px solid black;">
+              <p class="text-danger" *ngIf="registerform.controls['phone'].invalid && registerform.controls['phone'].touched"> please enter Your contact number</p>
+              <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['minlength']">please enter 10 digit Number</p>
+              <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['maxlength']"> please enter number below 10 digits.</p>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <h5 style="font-family: 'Times New Roman', Times, serif;" >Service</h5>
+              <input type="text" name="service" formControlName="service" class="form-control"  placeholder="Service" style="border: 0.2px solid black;">
+              <p  class="text-danger" *ngIf="registerform.controls.service.invalid && registerform.controls.service.touched" >Please Enter Service.</p>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">Message</h5>
+                <textarea name="" id="" cols="30" rows="10" name="message" formControlName="message" class="form-control"  placeholder="Message"  style="border: 0.2px solid black;"></textarea>
+                <!-- <input type="textarea"  > -->
+                <p  class="text-danger" *ngIf="registerform.controls.message.invalid && registerform.controls.message.touched" >Please Enter Message</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn btn-dark center">Submit</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
